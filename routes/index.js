@@ -43,7 +43,7 @@ router.get('/inventory', function(req, res, next) {
 
 /* GET term of use page. */
 router.get('/termOfUse', function(req, res, next) {
-  res.render('index', { title: 'Contact Me' });
+  res.render('termOfUse', { title: 'Term of Use' });
 });
 
 module.exports = router;

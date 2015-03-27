@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<!--File  name: index,  Author's  name: Zhe Yan (300706310),  web  site  name: Zhe's Potfilio,  file  description: this file is the term of use page of my potfolio site, it shows my site's term of use statement-->
+<html>
+    <head>
+        <meta charset="utf-8" />
+        <meta name="viewport" content="width=device-width,initial-scale=1.0" />
+        <meta name="description" content="this file is the home page of my potfolio site, 
+                                          it shows my tagline, mission and featured work." />
+        <meta name="author" content="Zhe Yan, Student Number:300706310" />
+        <meta name="copyright" content="Zhe Yan. Copyright (c) 2015" />
+
+        <title><%= title %></title>
+
+        <!--CSS Section-->
+        <link rel="stylesheet" href="/css/normalize.css">
+        <link rel="stylesheet" href="/css/foundation.min.css">
+        <link rel='stylesheet' href='/css/app.css' />
+
+        <!-- Start WOWSlider.com HEAD section -->
+        <link rel="stylesheet" type="text/css" href="/engine1/style.css" />
+        <script type="text/javascript" src="/engine1/jquery.js"></script>
+        <!-- End WOWSlider.com HEAD section -->
+    </head>
+    <body>
+        <div id="wrapper">
+            <!--add header to page-->
+            <% include partials/header.ejs %>
+
+            <!--+++++++++++++++++++++++++++++insert term of use statement section+++++++++++++++++++++++++++++++++++++++++++-->
+            <div class="row" id="aboutMeWrapper">
+                Welcome to our website. If you continue to browse and use this website, you are agreeing to comply with and be bound by the following terms and conditions of use, which together with our privacy policy govern ZheYan's relationship with you in relation to this website. If you disagree with any part of these terms and conditions, please do not use our website.
+            </div>
+
+            <!--Special Footer copyright statement for term of use page-->
+            <br />
+            <div class="footer-bottom">
+                <div class="row text-center">
+                    <p class="copyright">© 2015 Zhe Yan. All rights reserved.</p>
+                </div>
+            </div>
+            
+            <!--JavaScript Section-->
+            <script src="/Scripts/lib/jquery.js"></script>
+            <script src="/Scripts/lib/foundation.min.js"></script>
+            <script src="/Scripts/app.js"></script>
+        </div>
+    </body>
+</html>

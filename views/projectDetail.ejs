@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<!--File  name: index,  Author's  name: Zhe Yan (300706310),  web  site  name: Zhe's Potfilio,  file  description: this file is the home page of my potfolio site, it shows my tagline, mission and featured work-->
+<!--File  name: index,  Author's  name: Zhe Yan (300706310),  web  site  name: Zhe's Potfilio,  file  description: this file is the project detial page of my potfolio site, it shows detail information of my every project-->
 <html>
     <head>
         <meta charset="utf-8" />
@@ -29,18 +29,18 @@
             <!--+++++++++++++++++++++++++++++insert different projects section+++++++++++++++++++++++++++++++++++++++++++-->
             <!--body of the description of this project-->
             <div class="row" id="serviceWrapper">
-                    <!--insert -->
-                    <%    if(title == "Zhe's Potfilio")  {%>
-                    <%    include partials/home.ejs %>
-                    <%    }  %>   
-                    <!--insert the about me page-->
-                    <%    if(title == "About Me")  {%>
-                    <%    include partials/about.ejs %>
-                    <%    }  %>    
-                    <!--insert the projects page-->
-                    <%    if(title == "Projects")  {%>
-                    <%    include partials/projects.ejs %>
-                    <%    }  %>    
+                <!--insert -->
+                <%    if(title == "Android health tracking app")  {%>
+                <%    include partials/healthTrackingAndroidProject.ejs %>
+                <%    }  %>   
+                <!--insert the about me page-->
+                <%    if(title == "IT help desk system")  {%>
+                <%    include partials/helpDeskProject.ejs %>
+                <%    }  %>    
+                <!--insert the projects page-->
+                <%    if(title == "Inventory System")  {%>
+                <%    include partials/inventorySystemProject.ejs %>
+                <%    }  %>    
             </div>
 
             <!--add footer to page-->
