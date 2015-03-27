@@ -1,18 +1,43 @@
 <!DOCTYPE html>
+<!--File  name: index,  Author's  name: Zhe Yan (300706310),  web  site  name: Zhe's Potfilio,  file  description: this file is the home page of my potfolio site, it shows my tagline, mission and featured work-->
 <html>
-  <head>
-    <title><%= title %></title>
-    <link rel="stylesheet" href="/css/normalize.css">
-    <link rel="stylesheet" href="/css/foundation.min.css">
-    <link rel='stylesheet' href='/css/app.css' />
-  </head>
-  <body>
-   <div>
-    <h1><%= title %></h1>
-   </div>
-    
-    <script src="/Scripts/lib/jquery.js"></script>
-    <script src="/Scripts/lib/foundation.min.js"></script>
-    <script src="/Scripts/app.js"></script>
-  </body>
+    <head>
+        <meta charset="utf-8" />
+        <meta name="viewport" content="width=device-width,initial-scale=1.0" />
+        <meta name="description" content="this file is the home page of my potfolio site, 
+                                          it shows my tagline, mission and featured work." />
+        <meta name="author" content="Zhe Yan, Student Number:300706310" />
+        <meta name="copyright" content="Zhe Yan. Copyright (c) 2015" />
+
+        <title><%= title %></title>
+
+        <!--CSS Section-->
+        <link rel="stylesheet" href="/css/normalize.css">
+        <link rel="stylesheet" href="/css/foundation.min.css">
+        <link rel='stylesheet' href='/css/app.css' />
+
+        <!-- Start WOWSlider.com HEAD section -->
+        <link rel="stylesheet" type="text/css" href="/engine1/style.css" />
+        <script type="text/javascript" src="/engine1/jquery.js"></script>
+        <!-- End WOWSlider.com HEAD section -->
+    </head>
+    <body>
+        <div id="wrapper">
+            <!--add header to index-->
+            <% include partials/header.ejs %>
+
+            <!--Switch for different page-->
+            <%    if(title == "Zhe's Potfilio")  {%>
+            <%    include partials/home.ejs %>
+            <%    }  %>     
+
+            <!--add footer to index-->
+            <% include partials/footer.ejs %>
+
+            <!--JavaScript Section-->
+            <script src="/Scripts/lib/jquery.js"></script>
+            <script src="/Scripts/lib/foundation.min.js"></script>
+            <script src="/Scripts/app.js"></script>
+        </div>
+    </body>
 </html>
