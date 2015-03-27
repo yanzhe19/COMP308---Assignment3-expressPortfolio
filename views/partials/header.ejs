@@ -7,11 +7,11 @@
 
     <!--Navigation full size-->
     <div class="icon-bar six-up large-10 medium-10 columns end" id="navBarRegular">
-        <a class="item hide-for-small" href="/" id="checkedNavIcon">
+        <a class="item hide-for-small" href="/" <% if (title === "Zhe's Potfilio") { %>id="checkedNavIcon" <% } %>>
             <img src="assets/img/icon/home.svg" alt="" />
             <label>Home</label>
         </a>
-        <a class="item" href="/about">
+        <a class="item" href="/about"  <% if (title === 'About Me') { %>id="checkedNavIcon" <% } %>>
             <img src="assets/img/icon/me.svg" alt="" />
             <label class="show-for-large-up">
                 About Me
@@ -20,15 +20,15 @@
                 About
             </label>
         </a>
-        <a class="item" href="/projects">
+        <a class="item" href="/projects" <% if ((title === 'Projects')||(title === 'Android health tracking app') ||(title === 'IT help desk system') ||(title === 'Inventory System')) { %>id="checkedNavIcon" <% } %>>
             <img src="assets/img/icon/project.svg" alt="" />
             <label>Projects</label>
         </a>
-        <a class="item" href="/services">
+        <a class="item" href="/services" <% if (title === 'Services') { %>id="checkedNavIcon" <% } %>>
             <img src="assets/img/icon/service.svg" alt="" />
             <label>Service</label>
         </a>
-        <a class="item" href="/contact">
+        <a class="item" href="/contact" <% if (title === 'Contact Me') { %>id="checkedNavIcon" <% } %>>
             <img src="assets/img/icon/contact.svg" alt="" />
             <label class="show-for-large-up">
                 Contact Me
