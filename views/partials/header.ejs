@@ -50,16 +50,16 @@
         <img src="assets/img/logo.png" alt="" />
     </div>
     <div id="navBar" class="icon-bar four-up">
-        <a class="item" href="/about">
+        <a class="item" href="/about" <% if (title === 'About Me') { %>id="checkedNavIcon" <% } %>>
             <img class="smallIcon" src="assets/img/icon/me.svg" alt=""/>
         </a>
-        <a class="item" href="/projects">
+        <a class="item" href="/projects" <% if ((title === 'Projects')||(title === 'Android health tracking app') ||(title === 'IT help desk system') ||(title === 'Inventory System')) { %>id="checkedNavIcon" <% } %>>
             <img class="smallIcon" src="assets/img/icon/project.svg" alt="" />
         </a>
-        <a class="item" href="/services">
+        <a class="item" href="/services" <% if (title === 'Services') { %>id="checkedNavIcon" <% } %>>
             <img class="smallIcon" src="assets/img/icon/service.svg" alt="" />
         </a>
-        <a class="item" href="/contact">
+        <a class="item" href="/contact" <% if (title === 'Contact Me') { %>id="checkedNavIcon" <% } %>>
             <img class="smallIcon" src="assets/img/icon/contact.svg" alt="" />
         </a>
     </div>
@@ -68,6 +68,15 @@
 <!--breadcrumbs for home page-->
 <div class="row">
     <ul class="breadcrumbs">
-        <li class="current"><a href="index.html">Home</a></li>
+        <li <% if (title === "Zhe's Potfilio") { %> class="current"<% } %>><a href="/">Home</a></li>
+<!--        <% if (title === 'About Me') { %>id="checkedNavIcon" <% } %>-->
+        
+<!--
+        <%    if(title === "About Me")  {%>
+        <%    <li class="current"><a href="/about">About Me</a></li> %>
+        <%    }  %>   
+-->
+        
+        
     </ul>
 </div>
