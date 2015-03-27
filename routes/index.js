@@ -12,7 +12,7 @@ router.get('/about', function(req, res, next) {
 });
 
 /* GET projects page. */
-router.get('/products', function(req, res, next) {
+router.get('/projects', function(req, res, next) {
   res.render('index', { title: 'Projects' });
 });
 
@@ -23,6 +23,26 @@ router.get('/services', function(req, res, next) {
 
 /* GET contact page. */
 router.get('/contact', function(req, res, next) {
+  res.render('index', { title: 'Contact Me' });
+});
+
+/* GET android app project page. */
+router.get('/android', function(req, res, next) {
+  res.render('projectDetail', { title: 'Android health tracking app' });
+});
+
+/* GET IT help desk system project page. */
+router.get('/helpDesk', function(req, res, next) {
+  res.render('projectDetail', { title: 'IT help desk system' });
+});
+
+/* GET Inventory System project page. */
+router.get('/inventory', function(req, res, next) {
+  res.render('projectDetail', { title: 'Inventory System' });
+});
+
+/* GET term of use page. */
+router.get('/termOfUse', function(req, res, next) {
   res.render('index', { title: 'Contact Me' });
 });
 
