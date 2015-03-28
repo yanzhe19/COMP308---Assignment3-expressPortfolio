@@ -1,3 +1,4 @@
+<!--File  name: header.ejs,  Author's  name: Zhe Yan (300706310),  web  site  name: Zhe's Potfilio,  file  description: this file is the header of all pages, it shows navigation and breadscrumb for all pages-->
 <!--The Navigation bar(Full version) in medium and large screen-->
 <div class="row navClass hide-for-small">
     <!--Logo-->
@@ -68,40 +69,48 @@
 <!--breadcrumbs for home page-->
 <div class="row">
     <ul class="breadcrumbs">
-
+        <!--show for all pages-->
         <li <% if (title === "Zhe's Potfilio") { %> class="current"<% } %>><a href="/">Home</a></li>
 
+        <!--show for about me page-->
         <%if (title === "About Me") { %>
         <li class="current"><a href="/about">About Me</a></li>
         <% } %>
 
+        <!--show for project page-->
         <% if (title === 'Projects') { %>
         <li class="current"><a href="/projects">Projects</a></li> 
         <% } %>
 
+        <!--show for android project page-->
         <% if (title === 'Android health tracking app') { %>
         <li><a href="/projects">Projects</a></li> 
         <li class="current"><a href="/android">Android health tracking app</a></li> 
         <% } %>
 
+        <!--show for helpdesk project page-->
         <% if (title === 'IT help desk system') { %>
         <li><a href="/projects">Projects</a></li> 
         <li class="current"><a href="/helpDesk">IT help desk system</a></li> 
         <% } %>
 
+        <!--show for inventory project page-->
         <% if (title === 'Inventory System') { %>
-        <li><a href="/projects">Projects</a></li> s
+        <li><a href="/projects">Projects</a></li>
         <li class="current"><a href="/inventory">Inventory System</a></li> 
         <% } %>
 
+        <!--show for service page-->
         <%if (title === "Services") { %>
         <li class="current"><a href="/services">Services</a></li>
         <% } %>
 
+        <!--show for contact me page-->
         <%if (title === 'Contact Me') { %>
         <li class="current"><a href="/contact">Contact Me</a></li>
         <% } %>
 
+        <!--show for term of use page-->
         <%if (title === 'Term of Use') { %>
         <li class="current"><a href="/termOfUse">Term of Use</a></li>
         <% } %>
